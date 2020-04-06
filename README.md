@@ -1,1 +1,0 @@
-# adam-everson.github.io

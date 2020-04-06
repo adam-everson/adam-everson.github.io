@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marked in the browser</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script defer src="https://cdn.commento.io/js/commento.js" data-css-override="style.css" data-auto-init="true"
+        data-no-fonts="true"></script>
+</head>
+
+<body>
+    <div id='bar' class="sidebar">
+        <a class="noselect" title="Click to toggle theme" href="#" onclick="dark();return false;"><i id='theme-icon'
+                class="fa fa-fw fa-adjust"></i> Theme</a>
+        <a class="noselect" title="Click to enable commenting" href="#" onclick="comment();return false;"><i id='comment-icon'
+                class="fa fa-fw fa-comments-o"></i> Comment</a>
+        <hr class="dashed">
+        <a class='bk noselect' href="#1" onclick="render('00');return false;"><i class="fa fa-fw fa-book"></i> Home</a>
+        <a class='bk noselect' href="#1" onclick="render('01');return false;"><i id='01' class="bookmark fa fa-fw fa-bookmark-o"></i> Chapter 1</a>
+        <a class='bk noselect' href="#2" onclick="render('02');return false;"><i id='02' class="bookmark fa fa-fw fa-bookmark-o"></i> Chapter 2</a>
+    </div>
+    <div class="content">
+        <div id="area"></div>
+        <br style="font-size: 32px;">
+        <div id="commento" style="display: none;"></div>
+    </div>
+    
+</body>
+
+</html>
